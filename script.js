@@ -179,3 +179,11 @@ carousel.addEventListener("touchend", dragStop);
 //     })
 // }
 
+
+// faq section close button
+document.querySelectorAll('.tab .toggle').forEach(function(toggleButton) {
+    toggleButton.addEventListener('click', function() {
+        const content = this.closest('.tab').querySelector('.content');
+        content.style.maxHeight = content.style.maxHeight ? null : content.scrollHeight + "px";
+    });
+});
