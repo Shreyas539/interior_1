@@ -16,7 +16,7 @@
         <nav class="nav1 " id="home">  
             <div class="container main-nav flex">
                 <a href="#home" class="company-logo flex">
-                    <img src="assets/logo.jpg" width=75px height=75px alt="IRA"/>
+                    <img src="/assets/logo.jpg" width=75px height=75px alt="IRA"/>
                     <span class="logo-text"><h1>IRA</h1></span>
                 </a>
     
@@ -172,7 +172,7 @@
     
                 <div class="end-end container ">
                     <div>
-                        <p class="small-bold-text">End-to-End interior solutions</p>
+                        <p class="small-bold-text">End-to-End construction</p>
                     </div>
                     <div class="end-to-icons ">
                         <div class="end-icons ">
@@ -309,7 +309,7 @@
         <h1>Faq's</h1>
 
         <div class="tab">
-            <input type="radio" name="acc" id="acc1" />
+            <input type="checkbox"  id="acc1" />
             <label for="acc1">
                 <h2>01</h2>
                 <h3> How can I request a quote for my project?</h3>
@@ -320,7 +320,7 @@
         </div>
 
         <div class="tab">
-            <input type="radio" name="acc" id="acc2" />
+            <input type="checkbox"  id="acc2" />
             <label for="acc2">
                 <h2>02</h2>
                 <h3>What services does your architecture and interior company provide?</h3>
@@ -331,8 +331,8 @@
         </div>
 
         <div class="tab">
-            <input type="radio" name="acc" id="acc2" />
-            <label for="acc2">
+            <input type="checkbox"  id="acc7" />
+            <label for="acc7">
                 <h2>03</h2>
                 <h3>How do I get started on a project with your company?</h3>
             </label>
@@ -342,7 +342,7 @@
         </div>
 
         <div class="tab">
-            <input type="radio" name="acc" id="acc3" />
+            <input type="checkbox"  id="acc3" />
             <label for="acc3">
                 <h2>04</h2>
                 <h3>Can you work with my specific design preferences and style?</h3>
@@ -353,7 +353,7 @@
         </div>
 
         <div class="tab">
-            <input type="radio" name="acc" id="acc4" />
+            <input type="checkbox"  id="acc4" />
             <label for="acc4">
                 <h2>05</h2>
                 <h3>What is the typical timeline for a project?</h3>
@@ -364,7 +364,7 @@
         </div>
 
         <div class="tab">
-            <input type="radio" name="acc" id="acc5" />
+            <input type="checkbox"  id="acc5" />
             <label for="acc5">
                 <h2>06</h2>
                 <h3>Do you handle all the necessary permits and approvals?</h3>
@@ -375,7 +375,7 @@
         </div>
 
         <div class="tab">
-            <input type="radio" name="acc" id="acc6" />
+            <input type="checkbox"  id="acc6" />
             <label for="acc6">
                 <h2>07</h2>
                 <h3>Can you work within my budget?</h3>
@@ -404,17 +404,22 @@
 
             <div class="link-column flex">
                 <h4>IRA</h4>
+                <a href="#faq-section" class="hover-link">Team</a>
+                <a href="#faq-section" class="hover-link">Join Us</a>
+                <a href="#About" class="hover-link">About</a>
+                <a href="blog.html" class="hover-link">IRA blogs</a>
                 <a href="#" class="hover-link" onclick="openModal()">Get Free Quote</a>
                 <a href="privacy.html" class="hover-link">Privacy Policy</a>
+                <a href="#faq-section" class="hover-link">T&Cs</a>
                 <a href="#faq-section" class="hover-link">Faq</a>
+                <a href="#faq-section" class="hover-link">Disclaimer</a>
                 
             </div>
 
             <div class="link-column flex">
                 <h4>Customer Support</h4>
-                <a href="#" class="hover-link">Privacy Policy</a>
+                <a href="privacy.html" class="hover-link">Privacy Policy</a>
                 <a href="#" class="hover-link">Contact Us</a>
-                <a href="#" class="hover-link">Terms of Use</a>
                 <a href="#" class="hover-link">Terms & conditions</a>
                 <a href="#faq-section" class="hover-link">FAQ's</a>
                 
@@ -475,7 +480,7 @@
             <span class="close" id="closeModal">&times;</span>
             <h1 class="text-2xl font-semibold mb-4">Get a free Quote</h1>
             <form>
-                <div style="margin-bottom: 4px;">
+                <!-- <div style="margin-bottom: 4px;">
                     <p style="margin-bottom: 4px;">Tell us about your home</p>
                     <div class="form-radio-gp">
                         <div class="radio-gp">
@@ -499,9 +504,9 @@
                             <label for="Villa" style="color: rgb(102, 102, 102); border-color: rgb(102, 102, 102);">Independent home / Villa</label>
                         </div>
                     </div>
-                </div>
+                </div> -->
             
-                <div style="margin-bottom: 4px;">
+                <!-- <div style="margin-bottom: 4px;">
                     <p style="margin-bottom: 4px;">Which city is this home in ?</p>
                     <div class="form-radio-gp">
                         <div class="radio-gp">
@@ -525,12 +530,12 @@
                             <label for="Hassan" style="color: rgb(102, 102, 102); border-color: rgb(102, 102, 102);">Hassan</label>
                         </div>
                     </div>
-                </div>
+                </div> -->
             
                 <div class="mb-4">
                     <p>What is your name?</p>
                     <div class="from-text-input">
-                        <input type="text" placeholder="Name" name="your-name" class="text-input " id="form-input-name" autocomplete="off" required oninvalid="this.setCustomValidity('name?')">
+                        <input type="text" placeholder="Name" name="your-name" class="text-input " id="form-input-name" autocomplete="off"  oninvalid="this.setCustomValidity('name?')">
                     </div>
                 </div>
             
@@ -634,6 +639,16 @@
                                     Our numbers start with 080</em></span></p>
                     </div>
                 </div>
+
+                <div class="mb-4">
+                    <p >Email</p>
+                    <input id="email" type="email" class="text-input" placeholder="example@gmail.com">
+                </div>
+                <div class="mb-4">
+                    <p style="margin-top: 10px; ">pin code</p>
+                    <input id="pincode" style="margin-bottom: 5px;" class="text-input" type="number" id="sixDigitNumber" name="sixDigitNumber" min="100000" max="999999" pattern="\d{6}" required placeholder="000000">
+                </div>
+
                 <!-- Login Button -->
                 <button type="submit" onclick="sendEmail()" class="primary-button">Submit</button>
             </form>     
@@ -674,13 +689,14 @@
 
         requestAnimationFrame(raf)
     function sendEmail(){
-        const property_type = document.querySelector('input[name="PropertyType"]:checked').value;
-        const location = document.querySelector('input[name="city"]:checked').value;
+        // const property_type = document.querySelector('input[name="PropertyType"]:checked').value;
+        // const location = document.querySelector('input[name="city"]:checked').value;
         const name = document.getElementById('form-input-name').value;
         const mobile_no = document.getElementById('popup-phone').value;
-
+        const email = document.getElementById('email').value;
+        const pincode = document.getElementById('pincode').value;
         // Create a mailto link to open the user's email client
-        const mailtoString = `mailto:shreyasshre358@gmail.com?subject=New Contact Form Submission&body=Name: ${name}%0APhone-number: ${mobile_no}%0AProperty-type: ${property_type}%0ALocation: ${location}`;
+        const mailtoString = `mailto:shreyasshre358@gmail.com?subject=New Contact Form Submission&body=Name: ${name}%0APhone-number: ${mobile_no}%0AE-mail: ${email}%0Apincode: ${pincode}`;
 
         // Open the user's email client
         window.location.href = mailtoString;
