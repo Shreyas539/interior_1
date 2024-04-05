@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<!-- navbar -->
+<section>
+        <nav class="nav-privacy " id="home">  
+            <div class="container main-nav flex">
+                <a href="/index.html" class="company-logo flex">
+                    <img src="/assets/logo.jpg" width=75px height=75px alt="IRA"/>
+                    <span class="logo-text"><h1>IRA</h1></span>
+                </a>
+    
+                <div class="nav-links" id="nav-links">
+                    <ul class="flex">
+                        <li><a class="hover-link" href="/">Home</a></li>
+                        <li><a class="hover-link" href="index.html#services">Services</a></li>
+                        <li><a class="hover-link" href="index.html#why-us">Why Us</a></li>
+                        <li><a class="hover-link" href="index.html#About">About IRA</a></li>
+                        <li><a class="hover-link" href="index.html#portfolio">Portfolio</a></li>
+                        <li><a class="hover-link" href="index.html#faq-section">Faq's</a></li>
+                        <li><button class="hover-link primary-button" onclick="openModal()">Get Free Quote</button></li>
+                    </ul>
+                </div>
+                <a href="#" class="nav-toggle hover-link" id="nav-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </div>
+        </nav>
+</section>
+
+<section>
+    <div id="privacy" class="container privacy-container">
+        <h2>Statement of Privacy</h2>
+        <p>
+            ____________, a corporation founded under the Companies Act, 1956, is the owner and manager of the IRA Design Studio brand. Its registered office is located at _________________. Through its mobile application (the "App"), website (_______), and other electronic device(s), IRA Design Studio offers interior services. At IRA Design Studio, we take great pride in protecting the privacy of your personal information and in giving each and every one of our clients and website and app users outstanding service. To let you know about the privacy principles that apply to your use and access to our website and app, we have developed this privacy policy (the "Policy").
+        </p>
+        <p>
+            You consent to IRA Design Studio using and disclosing all of your personal information obtained through the Website/App in the ways described in this Policy, unless otherwise prohibited by applicable law.
+        </p>
+        <p>
+            It is recommended that you thoroughly read this Policy. By using IRA Design Studio.com's services, you consent to IRA Design Studio.com and certain authorised third-party service providers collecting and using your data in the ways specified in this Policy.
+        </p>
+        <p>
+            You agree to our Privacy Policy by using our website/app, signing up with us, or accessing our website/app. This is a legally binding agreement between you and IRA Design Studio and is an electronic record formed under the Information Technology Act, 2000 and the rules made thereunder (as amended). Neither of these documents requires a physical, electronic, or digital signature. Additionally, by providing us with your information, you consent to receiving emails from us about our services, including newsletters, campaign updates, and advertisements.
+        </p>
+        <p>
+            You are not permitted to access or use the Website and App if you do not agree to be bound by this Policy.
+        </p>
+        <p>
+            We have the right to periodically update the Privacy Policy to reflect changing legal, commercial, and consumer needs. Users will be appropriately informed as needed.
+        </p>
+    </div>
+</section>
+
+    <script>
+        const toggleButton = document.getElementById('nav-toggle');
+
+        const navLinks=document.getElementById('nav-links');
+
+        toggleButton.addEventListener( 'click' , () => {
+            navLinks.classList.toggle('active');
+        })
+    </script>
+    
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/4386180311.js" crossorigin="anonymous"></script>
+</body>
+</html>
